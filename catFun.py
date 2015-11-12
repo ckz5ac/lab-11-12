@@ -101,10 +101,10 @@ def handleEvent(state, event):
 # World state will be single x coordinate at left edge of world
 
 # The cat starts at the left, moving right 
-initState = (0,1)
+initState = (100,5)
 
 # Run the simulation no faster than 60 frames per second
-frameRate = 60
+frameRate = 40
 
 # Run the simulation!
 rw.runWorld(initState, updateDisplay, updateState, handleEvent,
