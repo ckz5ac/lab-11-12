@@ -58,7 +58,7 @@ def updateDisplay(state):
 #
 # state -> state
 def updateState(state):
-    return((state[0]+state[1],state[1]))
+    return(state[0]+state[1],state[1],state[2]+state[3],state[3])
 
 ################################################################
 
@@ -101,7 +101,7 @@ def handleEvent(state, event):
 # World state will be single x coordinate at left edge of world
 
 # The cat starts at the left, moving right 
-initState = (100,5)
+initState = (100,5,0,1)
 
 # Run the simulation no faster than 60 frames per second
 frameRate = 40
